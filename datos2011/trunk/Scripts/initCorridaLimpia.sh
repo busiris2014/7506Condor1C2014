@@ -1,0 +1,11 @@
+cd Control
+rm *.*
+cd ../Export
+rm *.*
+cd ../Flags
+rm *.* 
+cd ../Index
+rm *.*
+cd ..
+rm datos2011
+make all

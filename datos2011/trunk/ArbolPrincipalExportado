@@ -1,0 +1,13 @@
+--------- Arbol B+ ---------
+
+Tamanio Total Nodo:  4096
+Tamanio Datos Control Nodo:  12
+Tamanio Efectivo Nodo:  4084
+Tamanio Datos Control Registro:  5
+
+Primera Hoja:  0
+Nodos Libres:  
+
+  Numero: 0  Nivel: 0  Cant.Elem: 1  Esp.Libre: 4071  Hoja.Sig: 0
+          (1;0)13
+
