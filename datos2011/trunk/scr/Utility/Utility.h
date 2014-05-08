@@ -42,6 +42,7 @@ public:
 	static string dateFormat(string date);
 	static int compareDate(string dateEnd,string dateBegining);
 	static char* getDate();
+
 };
 
 

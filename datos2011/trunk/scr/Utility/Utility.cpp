@@ -333,6 +333,7 @@ string Utility::dateFormat(string date){
 	//Pub.date: Wed, 07 May 2014 18:03:25 +0000
 	//Pub.date: Thu, 8 May 2014 09:56:43 +0200
 
+
 	if(date.length()==26)//rss de la-aventura
 		return date;
 		//strptime(date.c_str(), "%d %b %Y %T %z", &tm);//"01 Feb 2013 00:00:01 +0200"
