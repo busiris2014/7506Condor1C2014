@@ -71,6 +71,126 @@ bool FileParser::parse(string path)
 	return (validPath & end);
 }
 
+
+bool FileParser::parseTWT(string path)
+{
+	string fileName;
+	string authorData;
+
+	bool validPath = true;
+	bool end = false;
+	int index = -1;
+
+	// Se intenta abrir el archivo
+	this->file = new ifstream(path.c_str());
+
+	if (!*this->file)
+	{
+		delete(this->file);
+		validPath = false;
+	}
+
+	if (validPath)
+	{
+		/* Se obtiene solo el nombre del archivo que contiene autor - titulo  */
+		fileName = Utility::normalizeString(path);
+		while(!end)
+		{
+			index = fileName.find('/', 0);
+			if (index >= 0)
+				fileName = fileName.substr((fileName.find('/', 0)+1), fileName.length());
+			else
+				end = true;
+		}
+
+		/* Del comienzo hasta la primer "-" es el AUTOR */
+		authorData = fileName.substr(0, fileName.length()-4);
+
+		book->setAuthor(Utility::trim(authorData));
+
+		/* Se procesa el archivo */
+		this->processTWT(path);
+
+		delete(this->file);
+	}
+
+	return (validPath & end);
+}
+
+
+bool FileParser::parseRSS(string path)
+{
+	string fileName;
+	string authorData;
+
+
+	bool validPath = true;
+	bool end = false;
+	int index = -1;
+
+	// Se intenta abrir el archivo
+	this->file = new ifstream(path.c_str());
+
+	if (!*this->file)
+	{
+		delete(this->file);
+		validPath = false;
+	}
+
+	if (validPath)
+	{
+			fileName = Utility::normalizeString(path);
+			while(!end)
+			{
+				index = fileName.find('/', 0);
+				if (index >= 0)
+					fileName = fileName.substr((fileName.find('/', 0)+1), fileName.length());
+				else
+					end = true;
+			}
+
+			/* Del comienzo hasta la primer "-" es el AUTOR */
+			authorData = fileName.substr(0, fileName.length()-4);
+
+			book->setAuthor(Utility::trim(authorData));
+
+
+
+		this->processRSS(path);
+
+		delete(this->file);
+	}
+
+	return (validPath & end);
+}
+
+ByteString FileParser::processDescription(ByteString input){
+	int index = 0;
+	int nextIndex = 0;
+	ByteString output;
+	string word;
+	size_t end;
+
+	while (end == string::npos){
+		end = input.toString().find(' ',index);
+		nextIndex = input.toString().find(' ',index);
+		if(end == string::npos)
+			word = input.toString().substr(index,input.toString().length());
+		else
+			word = input.toString().substr(index,nextIndex);
+
+
+		if(!(isStopword(word)))
+    		output.insertLast(Utility::toLower(word));
+
+		index =  input.toString().find(' ',index)+1;
+	}
+
+
+
+	return input;
+}
+
 void FileParser::processFile(string path)
 {
 	ByteString text;
@@ -114,6 +234,114 @@ void FileParser::processFile(string path)
 	// Se setea el numero de palabras
 	book->setWordCount(this->getWordCount());
 }
+
+void FileParser::processTWT(string path)
+{
+	ByteString text;
+	string titleData;
+	string editorialData;
+	string textData;
+
+	string line;
+	bool endFile = false;
+	//bool editorialFound = false;
+
+	this->file = new ifstream(path.c_str());
+
+	while(!endFile)
+	{
+		getline(*this->file, line);
+
+		if (this->file->eof() || this->file->bad())
+			endFile = true;
+
+		if (!endFile)
+		{
+			//comienza nuevo twt
+
+			editorialData = line.substr(0,(line.find('@', 0)-1));
+			editorialData = Utility::dateFormat(editorialData);
+			book->setEditorial(editorialData);
+
+			textData = line.substr(line.find("says: ")+6,line.length());
+			text.clean();
+			text.insertLast(Utility::trim(textData));
+			book->setText(processDescription(text).toString());
+		}
+		//como hacemos para los siguientes? (loop)
+	}
+}
+
+
+
+
+void FileParser::processRSS(string path)
+{
+	ByteString text;
+	string authorData;
+	string titleData;
+	string editorialData;
+	string textData;
+
+	string line;
+	bool endFile = false;
+	//bool editorialFound = false;
+
+	this->file = new ifstream(path.c_str());
+
+	while(!endFile)
+	{
+		getline(*this->file, line);
+
+		if (this->file->eof() || this->file->bad())
+			endFile = true;
+
+		if (!endFile)
+		{
+			/*if(line.find("Title: ") != string::npos)
+				{
+				titleData = line.substr(7,line.length());
+				book->setTitle(Utility::trim(titleData));
+				}
+
+			else if(line.find("Author: ") != string::npos)
+				{
+				authorData = line.substr(8,line.length());
+				book->setAuthor(Utility::trim(authorData));
+				}*/
+
+			if(line.find("Description: ") != string::npos)
+				{
+				text.clean();
+				textData = line.substr(13,line.length());
+				}
+
+			else if(line.find("Updated: ") != string::npos)
+				{
+				book->setText(processDescription(text).toString());//nuevo rss
+
+				//comienza otro rss
+
+				editorialData = line.substr(9,line.find("Tittle: ")-2);
+				editorialData = Utility::dateFormat(Utility::trim(editorialData));
+				book->setEditorial(editorialData);
+
+				titleData = line.substr(7,line.length());
+				book->setTitle(Utility::trim(titleData));
+
+				authorData = line.substr(8,line.length());
+				book->setAuthor(Utility::trim(authorData));
+				}
+
+			else
+				{
+				text.insertLast(Utility::trim(line));
+				}
+		}
+		//como hacemos para los siguientes? (loop)
+	}
+}
+
 
 bool FileParser::findEditorial(string line)
 {

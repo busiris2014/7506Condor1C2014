@@ -22,9 +22,13 @@ private:
 	set<string> words;
 	int lines;
 	Book* book;
+    list<Book> rss;
+    list<Book> twt;
 
 	map<string, Term*> terms;
 
+	void processTWT(string path);
+	void processRSS(string path);
 	void processFile(string path);
 	bool findEditorial(string line);
 	bool isStopword(string word);
@@ -32,6 +36,7 @@ private:
 	list<string> getEditorials(string fileName);
 	void addTerm(string word, unsigned int position);
 	void addWord(string word, unsigned int &position);
+	ByteString processDescription(ByteString input);
 
 
 public:
@@ -40,6 +45,8 @@ public:
 	virtual ~FileParser();
 
 	bool parse(string path);
+	bool parseTWT(string path);
+	bool parseRSS(string path);
 
 	set<string> getWords();
 	void setWords(string text);
