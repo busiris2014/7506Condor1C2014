@@ -38,6 +38,9 @@ public:
 
 	static string cleanString(string str);
 	static string normalizeString(string str);
+
+	static string dateFormat(string date);
+	static int compareDate(string dateEnd,string dateBegining);
 	static char* getDate();
 };
 
