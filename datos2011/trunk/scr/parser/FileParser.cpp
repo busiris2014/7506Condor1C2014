@@ -274,7 +274,6 @@ void FileParser::processTWT(string path)
 
 
 
-
 void FileParser::processRSS(string path)
 {
 	ByteString text;

@@ -30,6 +30,7 @@ private:
 	void processTWT(string path);
 	void processRSS(string path);
 	void processFile(string path);
+
 	bool findEditorial(string line);
 	bool isStopword(string word);
 	void setEditorials(string fileName);
