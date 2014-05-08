@@ -1,0 +1,44 @@
+** attempting to load extensions
+** loading tweeterLogger.exts
+-- using SSL for default URLs.
+trying to find cURL ... /usr/bin/curl
+-- Streaming API disabled (no -dostream) (TTYtter will use REST API only)
+-- checking TTYtter version: http://www.floodgap.com/software/ttytter/02current.txt
+-- your version of TTYtter is up to date (2.1.0)
+(checking credentials) test-login SUCCEEDED!
+-- processing credentials: logged in as mogurito36
+*** detached daemon released. pid = 15257
+TP_DATOS
+a0> <FREAKOUTINPARIS> https://pbs.twimg.com/media/BkLn6tHCUAANp-Z.jpg
+a1> <FREAKOUTINPARIS> "¿Dejas de creer en el sol cuando lo tapan las nubes?" - (via pedacitosdecristal) http://tmblr.co/ZFV2Fy1Bsg8z3
+a2> <FREAKOUTINPARIS> Photo:  http://tmblr.co/ZFV2Fy1BshGO3
+a3> <FREAKOUTINPARIS> Photo: April ❀ en We Heart It. http://tmblr.co/ZFV2Fy1Bs-Rgl
+a4> <FREAKOUTINPARIS> Photo: (16) Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1Bs-XyF
+a5> <FREAKOUTINPARIS> Photo: Beatrices ∆ en We Heart It. http://tmblr.co/ZFV2Fy1Bt0AJu
+a6> <BriProv> Never been a big popcorn person, but these sweet & salty minibags are super good! Perfect size.
+a7> <delfeipls> los saxofones son lo mejor de arcade fire
+a8> <delfeipls> queso brie y vino tinto
+a9> (x2) <%LucesparaAprend> RT @OEIDominicana: "Es fundamental que los docentes no sientan temor ni vergüenza a la hora de preguntar,  arriesgar,  innovar". Gloria Calvo.
+b0> <LucesparaAprend> Esos niños grandes http://lasreincidentes.es/marta/esos-ninos-grandes vía @LasReincidentes
+b1> <LucesparaAprend> Ánimo a los chilenos y sus familias.
+b2> (x5) <%LucesparaAprend> RT @EspacioOEI: “@ocdeenespanol: Prueba tu capacidad de resolver problemas haciendo el test PISA de la #OECDPISA @OECD_Edu http://www.oecd.org/pisa/test/?utm_content=buffer244f9&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer …”
+b3> (x3) <LucesparaAprend> Qué es Luces para Aprender? Te lo contamos en este vídeo. https://www.youtube.com/watch?v=ptYiPe4wDC4
+b4> (x5) <%LucesparaAprend> RT @ayudaenaccion: La @CME_es reclama una #educacióninclusiva en la #SAME2014 http://www.ayudaenaccion.org/blog/decimos/noticias/2014/04/02/la-cme-reclama-una-educacion-inclusiva-en-la-semana-de-accion-mundial/ https://pbs.twimg.com/media/BkNIhttCQAEVS-y.png
+b5> <LucesparaAprend> Todavía nos queda mucho por hacer en educación. http://sociedad.elpais.com/sociedad/2014/04/01/actualidad/1396365901_824572.html
+b6> (x16) <%LucesparaAprend> RT @FundacionANAR: Leer a los hijos potencia su creatividad, mejora la comunicación y refuerza el vínculo afectivo. #libroinfantil https://pbs.twimg.com/media/BkNrRPvCQAAuPfl.jpg
+b7> (x4) <bacultural> Conocé el cronograma de servicios para el feriado de hoy miércoles 2 de abril (incluye teatros y museos): http://bit.ly/Serv0204
+b8> (x59) <%bacultural> RT @herlombardi: El 2 de abril no debe ser feriado.Por ese camino terminaremos con un monumento a Galtieri. Los veteranos,los que murieron,merecen otra fecha
+b9> (x7) <bacultural> Inicia el ciclo "Teatro Otoñal": casi 30 grupos teatrales realizarán 50 funciones en 4 escenarios distintos. #GRATIS http://bit.ly/TeatOt
+c0> <delfeipls> necesito mas tiempo, mas feriados o un día mas los fines de semana
+c1> <bacultural> Homenaje a los caídos en Malvinas en el Museo Perlotti.  Del 5 de abril al 18 de mayo en Pujol 664. >> http://bit.ly/CMalvi
+c2> <bacultural> HOY viernes 4 y el sábado 5 Palo Pandolfo abre una nueva edición del ciclo Música en el Hall en el @TeatroSMOficial http://bit.ly/Mhall04
+c3> (x10) <bacultural> HOY abre el #BAFICI con función gratuita en el Anfiteatro de Pque Centenario. 20 h >> "The Congress". http://bit.ly/ApBAFICI
+c4> <BriProv> "Since I am paying for PS Plus I am asking for top quality games", haha. #entitlement
+c5> <FREAKOUTINPARIS> MALVINAS. ARGENTINAS. http://tmblr.co/ZFV2Fy1BvoDKc
+c6> <bacultural> El Ballet Contemporáneo del Teatro San Martín reestrenó "El Mesías" en el @TeatroSMOficial. Funciones y entradas: http://bit.ly/Mesias14
+c7> (x6) <%bacultural> RT @TeatroSMOficial: Mañana es Día Popular con #entradas a 35 para ver el ‘El mesías’ del #Ballet #Contemporáneo del TSM + en http://goo.gl/cxSpZv
+c8> (x64) <%BriProv> RT @Kotaku: Amazon adding Metacritic scores is bad news for everyone. Here's why: http://bit.ly/1funzcX
+c9> (x2) <bacultural> Jueves de película en el Distrito Audiovisual con "GMO OMG". #gratis 3/4, 19:30hs http://bit.ly/GmoOmg  http://ow.ly/i/54XxC
+[DM da0][bacultural/Thu Sep 22 23:55:55 +0000 2011] ¡Ganaste 2 plateas para Red Bull X-Fighter Jams! Buscalas mañana de 15 a 18 por Rivadavia 524 oficina 217, preguntá por Julieta o Gabriel.
+TP_DATOS
+TP_DATOS

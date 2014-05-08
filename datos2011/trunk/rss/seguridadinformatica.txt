@@ -1,0 +1,272 @@
+
+Title: Informe SIR 16 de Ciberseguridad [Microsoft]
+Description: Microsoft ha lanzado el nuevo reporte de Ciberseguridad, Microsoft Security Intelligence Report (SIR) v16 en donde subrayan que las mitigaciones de seguridad efectiva aumentan el costo a los ciberdelincuentes. Los datos también indican que los ciberdelincuentes están utilizando cada vez más tácticas engañosas en sus intentos de poner en peligro los sistemas.
+
+El informe que se publica dos veces al año ayuda a la comunidad a comprende las herramientas, tácticas y amenazas planteadas por los...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Thu, 08 May 2014 10:52:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: El 95% de los ciberdelitos cometidos quedan impunes
+Description: El 95% de los delitos relacionados con las nuevas tecnologías —la  llamada cibercriminalidad— quedan impunes, según un estudio sobre este  tipo de infracciones que será hecho público próximamente por primera vez  por el Ministerio del Interior. "Este fenómeno de la cibercriminalidad tiene gran importancia nacional e  internacional, no sólo por la amenaza que representa para los  ciudadanos, sino también por el peligro que supone para la economía y  las infraestructuras críticas", según señala...
+
+
+Pub.date: Thu, 08 May 2014 10:14:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: "El antivirus ha muerto" [Symantec]
+Description: Brian Dye, CEO de Symantec (conocida por su antivirus Norton), ha declarado recientemente algo que no deja indiferente a nadie: "Los antivirus han muerto. Ya no pensamos bajo ningún sentido en los antivirus como generadores de dinero", dice. Y es por ese motivo que toda la compañía quiere reinventarse y evolucionar de la misma forma con la que han evolucionado los ataques a nuestros sistemas. 
+
+¿Cómo? Dejando de intentar evitar esos ataques (que pueden venir incluso del gobierno para espiarnos)...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Thu, 08 May 2014 07:46:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: COBIT 5: Guía de Controles y Aseguramiento en la Nube
+Description: En los últimos cinco años, la adopción de la nube ha cambiado de ser una idea que se enfrentaba a la resistencia a una solución que está creciendo exponencialmente. Para ayudar a las compañías a encontrar valor en esta solución – y evitar una pesadilla de seguridad de la información debido a la pérdida de control de su información – ISACA ha lanzado una nueva guía que brinda los pasos prácticos para el aseguramiento y el control en la nube.
+
+De acuerdo con ISACA, los siguientes 13 puntos...
+
+Cidoenomplcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Wed, 07 May 2014 12:14:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Vulnerabilidad crítica en DNS BIND
+Description: Mientras trabajaban en un trabajo de investigación, dos estudiantes descubrieron una vulnerabilidad de seguridad grave en el software DNS BIND [PDF, video] en el algoritmo TCP Smoothed Round Trip Time (SRTT), 
+
+El algoritmo SRTT es utilizado por BIND para determinar qué servidor autorizado debe ser consultado para un dominio que tiene múltiples servidores enumerados en su registro NS RRset.
+
+Los israelíes Roee Hay y Jonathan Kalechstein, conducidos por el Dr. Gabi Nakibly de la Facultad de...
+
+
+Pub.date: Wed, 07 May 2014 08:22:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Informe sobre herramientas de Identity Management
+Description: La empresa de consultoría Forrester Research ha lanzado un nuevo reporte en el que identifica a los 9 principales proveedores de herramientas de Identity Management y los evalúa en base a ciertos criterios. Repasemos la lista y veamos por qué se sitúan como los principales en el sector.
+
+Para comenzar, hay que destacar que el mercado ha madurado bastante en los últimos tres años, y continúa siendo central a la hora de proteger la información de las compañías. Forrester identificó a nueve...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ef="="http:/tp://feeds.feedburner.com/~ff/NoticiasSeguridadInformatica?a=off-g3az9nI:dj93u8k7XOA:YwkR-u9nhCs">
+
+Pub.date: Wed, 07 May 2014 06:06:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: John McAffe presenta Chadder, mensajero de seguridad para Android y Windows Phone
+Description: El fundador de Future Tense Private Systems (FTC) John McAfee, ha presentado  Chadder, una aplicación de mensajería instantánea que promete un nivel  de seguridad sin precedentes y mensajes encriptados de forma automática.  Chadder está disponible para Android y Windows Phone.
+
+En la página oficial de Chadder en Google+ dice que John McAfee descubrió el equipo de Etransfr y que están asociados con FTC para Chadder.
+
+La app en cuestión ha sido bautizada como Chadder. Según el propio  McAfee, se...
+
+Codoenimplcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Tue, 06 May 2014 14:19:00 PDT
+Author: noreply@blogger.com (- Raúl -)
+
+Title: Ataques a Bitcoin, en contexto
+Description: Desde el repentino crecimiento y popularización de Bitcoin como sistema financiero factible, hemos sido testigos de innumerables ataques a diferentes servicios de intercambio, pudiendo nombrarse a Flexcoin, Poloniex y el gigante Mt. Gox como los primeros que sobrevienen la memoria. Ante las frecuentes fallas de implementación imposibles de pasar por alto, es que surgen interrogantes sobre las potenciales razones subyacentes que conducen a continuar construyendo sistemas susceptibles a ataques...
+
+ 
+
+Pub.date: Tue, 06 May 2014 12:19:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Tecnologías de Google Street View permiten solucionar CAPTCHAs
+Description: Técnicos de Google que estaban desarrollando un programa para identificar los números de las casas en Google Street View han hallado la forma de superar sus propios CAPTCHAs como efecto colateral de sus investigaciones. 
+
+Los spammers y cibercriminales han estado buscando por años métodos para burlar los CAPTCHAs y reCAPTCHAs, los sistemas que piden a los humanos que reconozcan números y letras distorsionados para probar que no son un robot. Esta barrera de protección evita que los delincuentes...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Tue, 06 May 2014 10:24:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Dropbox soluciona vulnerabilidad al compartir archivos
+Description: La empresa de almacenamiento nube reveló en su blog que una debilidad basada en la cabecera HTTP Referer podría haber sido aprovechada para exponer información. la cabecera Referer permite a un sitio web saber "de dónde viene un usuario". En la siguiente escena, podría aprovecharse esta función vía Dropbox para robar datos:
+Un usuario de Dropbox comparte un enlace a un documento que contiene un enlace a un sitio web de terceros.Un destinatario autorizado hace clic en un hipervínculo del...
+
+ 
+
+Pub.date: Tue, 06 May 2014 07:20:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Cómo configurar seguridad en Facebook [video]
+Description: Kapersky Lab ha publicado una interesante videoguía sobre cómo establecer la configuración de privacidad de Facebook. Ten en cuenta que tu actividad en Facebook puede variar desde ser completamente pública a solo está disponible para un usuario individual.
+
+La Página de Configuración de Privacidad de Facebook incluye una visión general de cómo la opciones de privacidad afectan al intercambio de información, que se etiqueta en los mensajes de los demás, los cambios de configuración y la...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ f="h"http:/tp://feeds.feedburner.com/~ff/NoticiasSeguridadInformatica?a=u9NY8q6n8Jc:8dI2W0LmyDw:YwkR-u9nhCs">
+ src=stp:/http://feeds.feedburner.com/~r/NoticiasSeguridadInformatica/~4/u9NY8q6n8Jc" height="1" width="1"/>
+Pub.date: Tue, 06 May 2014 05:09:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: W3C realiza un Penetration Test y solicita el cambio de contraseñas de sus usuarios
+Description: Como parte del mejoramiento de su infraestructura, W3C ha realizado un Penetration Test y como resultado se han encontraron diferentes tipos de vulnerabilidades como SQL Injection (SQLi).El equipo de sistemas del W3C determinó que éstos fueron utilizados para obtener acceso no autorizado a su base de datos de usuarios y contraseñas y, puesto que existe una posibilidad potencial de que un atacante haya utilizado esas credenciales, han requirido restablecer todas las contraseñas.
+El equipo de...
+
+ 
+
+Pub.date: Mon, 05 May 2014 12:52:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Trece delitos que todo tuitero debe conocer (en España)
+Description: En España, cada vez son más los casos de delitos cometidos por Twitter, y  recientemente se ha conocido el caso de varios detenidos acusados de  enaltecimiento del terrorismo en la denominada operación "Araña".
+
+Recupero una vieja entrada de este sitio  dirigida a blogs, pero que es perfectamente aplicable a Twitter y las  conductas que por medio del mismo se pueden cometer y que pueden  considerarse delito.
+
+Curiosamente, la mayoría de los delitos son de difícil persecución  puesto que no...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Mon, 05 May 2014 09:46:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: El cibercrimen costará 491.000 millones de dólares en 2014
+Description: Según la consultora IDC, el 61% de los ordenadores con 'software' pirata está infectado por software malicioso ('malware') y el 27% de los trabajadores instala 'software' de todo tipo en sus dispositivos sin la supervisión de sus compañías. 
+Microsoft ha hecho públicos los resultados del estudio realizado por la consultora IDC y la Universidad Nacional de Singapur, que estima que en 2014 las empresas gastarán cerca de 491.000 millones de dólares por problemas de seguridad asociados a la...
+
+ 
+
+Pub.date: Mon, 05 May 2014 07:07:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Abierta inscripción a Conferencia y Talleres de #OWASP
+Description: Actualización: en Argentina se encuentra abierta la inscripción a mi taller de "OWASP para Pentesters" y el mismo se puede pagar en Pesos Argentinos. 
+
+OWASP los invita a participar de la Jornada de Seguridad en  aplicaciones Web "OWASP LatamTour" a realizarse en Argentina, Colombia, Chile, Ecuador, Guatemala, Perú, Uruguay.
+
+"OWASP   Latam Tour" tiene el objetivo de crear conciencia acerca de los   problemas de seguridad de aplicaciones web en la región de América   Latina, por lo que personas...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Mon, 05 May 2014 05:00:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Publicado el Boletín 198 de Segu-Info - 04/05/2014
+Description: En este Boletín 198, publicamos la opinión sobre el "Registro No Llamar y la Protección de Datos Personales", en el ámbito de la Provincia de Buenos Aires, Argentina.
+
+Si todavía no has oído de HeartBleed o simplemente deseas actualizarte sobre el tema, consulta todo lo que hemos publicado en nuestro Blog.
+
+Además, publicamos un completo informe sobre Herramientas de  Vulnerability Assessment y Gestión de Incidencias y cómo las mismas pueden ser utilizadas para asegurar una infraestructura...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ef="="http:/tp://feeds.feedburner.com/~ff/NoticiasSeguridadInformatica?a=cRv8iTJNuEg:eQ8jGe2sf9U:YwkR-u9nhCs">
+
+Pub.date: Sun, 04 May 2014 10:02:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Mozilla reforzará la verificación de certificados SSL en Firefox
+Description: Mozilla planea hacer cumplir más estrictamente las mejores prácticas del sector en certificados SSL en sus próximas versiones de Firefox, a través de un nuevo sistema de verificación de certificados. El nuevo sistema será implementado como librería, llamada "mozilla::pkix". Comenzará a utilizarse en Firefox 31, previsto para julio.
+
+Muchos de los cambios en la verificación de certificados de esta nueva librería son sutiles y están relacionados con los requisitos técnicos establecidos por la...
+
+Conoenidplcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Sun, 04 May 2014 08:30:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Internet se ha roto, otra vez #HeartBleed
+Description: Poco se puede aportar ya al fallo de implementación criptográfica Heartbleed (ya tenemos disponibles plugins para FOCA y Faast). Se trata de un grave problema que tendrá (y es posible que haya tenido) graves repercusiones. Sin embargo, no es la primera catástrofe (criptográfica o no) en la red. ¿Las ha habido peores? ¿Es realmente una catástrofe, o lo han sido sus "daños colaterales"?
+
+En la versión OpenSSL 1.0.1 se introdujo la implementación del protocolo RFC6520, que describe la extensión...
+
+Codoenimplcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Sat, 03 May 2014 09:51:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: AOL y Engadget comprometidos... Cambia tu contraseña
+Description: Engadget está enviando un correo a sus suscriptores recomendado cambiar la contraseña debido a un incidente  reciente de acceso no autorizado a la información de usuarios almacenados en su empresa matriz, AOL. Al parecer la empresa ha descubierto que los atacantes también puede acceder a datos de los foros de tecnología Engadget y Xataka, incluyendo nombres de usuario y contraseñas.
+
+La buena noticia es que los sitios utilizan Hash Bcrypt y SHA con SALT, lo cual hace más improbable un ataque...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ef="="http:/tp://feeds.feedburner.com/~ff/NoticiasSeguridadInformatica?a=Iu5CotLNDFo:PH2lsj3n7eo:YwkR-u9nhCs">
+
+Pub.date: Sat, 03 May 2014 05:46:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Curso de RFID y NFC en Buenos Aires
+Description: Nahuel Grisolia acaba de publicar una nueva edición de su Workshop de RFID y NFC (temario), basado en el brindado hace poco tiempo en Alemania, en la conferencia Troopers y en Argentina en Ekoparty.
+
+El curso será brindado el próximo sábado 17 de mayo 2014 de 9 a 18.30 en Ciudad de Buenos Aires y es presencial (no transmitida a través de Internet).
+
+El precio del Workshop es (almuerzo no está incluído):
+AR $750 durante el mes de abril (transferencia bancaria)AR $850 durante el mes de mayo...
+
+Contenidoenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Fri, 02 May 2014 11:30:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Google Dork para encontrar Juniper SSL VPNs vulnerables a #HeartBleed
+Description: El corazón de Internet sigue sangrando... muestra de ello es un texto en pastebin de Surivaton en el que se muestra un Google Dork para buscar VPNs SSL de Juniper y luego comprobar si son vulnerables a Heartbleed. 
+
+Descubrirás que hasta grandes compañías siguen siendo vulnerables pero ten cuidado y no te pongas a volcar usuarios y contraseñas como un loco, no te vaya a pasar lo mismo que a cierto adolescente canadiense que fue arrestado por explotar Heartbleed.
+
+Uso:
+Buscar en Google...
+
+nidoecomplcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Fri, 02 May 2014 08:45:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Microsoft publica parche para Internet Explorer... Windows XP incluido
+Description: Microsoft ha liberado hoy el parche para solucionar la vulnerabilidad que está afectando activamente a Internet Explorer en prácticamente todas sus versiones y sistemas. Sin embargo, la noticia lleva consigo otra de no poca importancia: Hay parche para Windows XP.
+
+Hace casi un mes que la compañía que ahora preside Satya Nadella daba por finiquitada la era XP. Terminaba el soporte para el sistema más denostado, querido y longevo de la familia Windows, ya no iban a publicarse más parches. Era...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ f="h"http:/tp://feeds.feedburner.com/~ff/NoticiasSeguridadInformatica?a=TRiNBOcF3xI:AQcLY6v4iiE:YwkR-u9nhCs">
+ src=stp:/http://feeds.feedburner.com/~r/NoticiasSeguridadInformatica/~4/TRiNBOcF3xI" height="1" width="1"/>
+Pub.date: Fri, 02 May 2014 05:10:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Mozilla publica Firefox 29 y corrige 15 nuevas vulnerabilidades
+Description: Mozilla ha anunciado la publicación de la versión 29 de Firefox, junto con 14 boletines de seguridad destinados a solucionar 15 nuevas vulnerabilidades en el propio navegador, el gestor de correo Thunderbird y la suite SeaMonkey.
+
+Firefox 29 destaca por incluir una nueva interfaz de usuario, conocida como Australis, en el que destaca la simplificación y un renovado cambio de imagen. También incluye novedades en Firefox Sync, al introducir las cuentas Firefox ("Firefox Accounts"), que mediante...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+ 
+
+Pub.date: Thu, 01 May 2014 10:19:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Core Infrastructure Initiative: iniciativa busca evitar futuras variantes de #Heartbleed
+Description: Grandes empresas se han sumado a una iniciativa global de la Fundación Linux. Hasta ahora, en su mayoría habían dejado el trabajo de actualización, validación y control de calidad de infraestructura central de seguridad de Internet en manos de desarrolladores voluntarios. 
+
+Gran parte de las grandes empresas tecnológicas, como asimismo un considerable número de actores menores, utilizan la funcionalidad de seguridad ofrecida por la biblioteca OpenSSL. Sin embargo, muy pocas de las empresas han...
+
+Contenido completo del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Thu, 01 May 2014 07:01:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)
+
+Title: Vulnerabilidad en Telegram: dos clientes por la clave de uno
+Description: INTECO ha llevado a cabo un análisis minucioso del diseño del protocolo que la plataforma de mensajería Telegram emplea para autenticar a los usuarios, es decir, el modo en el que éstos se identifican para acceder al servicio. 
+
+La conclusión es clara: se trata de un fallo de seguridad en el que un atacante podría ser capaz de interceptar la información enviada por los usuarios sin que éstos sean conscientes de que está ocurriendo. 
+
+El problema se debe a que Telegram posibilita que cualquier...
+
+Contenidolcompleto del post en http://blog.segu-info.com.ar o haciendo clic en el título de la noticia
+
+Pub.date: Wed, 30 Apr 2014 07:33:00 PDT
+Author: noreply@blogger.com (Cristian Borghello)

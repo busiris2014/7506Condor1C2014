@@ -1,0 +1,863 @@
+** attempting to load extensions
+** loading tweeterLogger.exts
+-- using SSL for default URLs.
+trying to find cURL ... /usr/bin/curl
+-- Streaming API disabled (no -dostream) (TTYtter will use REST API only)
+-- checking TTYtter version: http://www.floodgap.com/software/ttytter/02current.txt
+-- your version of TTYtter is up to date (2.1.0)
+(checking credentials) test-login SUCCEEDED!
+-- processing credentials: logged in as mogurito36
+*** detached daemon released. pid = 15257
+TP_DATOS
+a0> <FREAKOUTINPARIS> https://pbs.twimg.com/media/BkLn6tHCUAANp-Z.jpg
+a1> <FREAKOUTINPARIS> "¿Dejas de creer en el sol cuando lo tapan las nubes?" - (via pedacitosdecristal) http://tmblr.co/ZFV2Fy1Bsg8z3
+a2> <FREAKOUTINPARIS> Photo:  http://tmblr.co/ZFV2Fy1BshGO3
+a3> <FREAKOUTINPARIS> Photo: April ❀ en We Heart It. http://tmblr.co/ZFV2Fy1Bs-Rgl
+a4> <FREAKOUTINPARIS> Photo: (16) Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1Bs-XyF
+a5> <FREAKOUTINPARIS> Photo: Beatrices ∆ en We Heart It. http://tmblr.co/ZFV2Fy1Bt0AJu
+a6> <BriProv> Never been a big popcorn person, but these sweet & salty minibags are super good! Perfect size.
+a7> <delfeipls> los saxofones son lo mejor de arcade fire
+a8> <delfeipls> queso brie y vino tinto
+a9> (x2) <%LucesparaAprend> RT @OEIDominicana: "Es fundamental que los docentes no sientan temor ni vergüenza a la hora de preguntar,  arriesgar,  innovar". Gloria Calvo.
+b0> <LucesparaAprend> Esos niños grandes http://lasreincidentes.es/marta/esos-ninos-grandes vía @LasReincidentes
+b1> <LucesparaAprend> Ánimo a los chilenos y sus familias.
+b2> (x5) <%LucesparaAprend> RT @EspacioOEI: “@ocdeenespanol: Prueba tu capacidad de resolver problemas haciendo el test PISA de la #OECDPISA @OECD_Edu http://www.oecd.org/pisa/test/?utm_content=buffer244f9&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer …”
+b3> (x3) <LucesparaAprend> Qué es Luces para Aprender? Te lo contamos en este vídeo. https://www.youtube.com/watch?v=ptYiPe4wDC4
+b4> (x5) <%LucesparaAprend> RT @ayudaenaccion: La @CME_es reclama una #educacióninclusiva en la #SAME2014 http://www.ayudaenaccion.org/blog/decimos/noticias/2014/04/02/la-cme-reclama-una-educacion-inclusiva-en-la-semana-de-accion-mundial/ https://pbs.twimg.com/media/BkNIhttCQAEVS-y.png
+b5> <LucesparaAprend> Todavía nos queda mucho por hacer en educación. http://sociedad.elpais.com/sociedad/2014/04/01/actualidad/1396365901_824572.html
+b6> (x16) <%LucesparaAprend> RT @FundacionANAR: Leer a los hijos potencia su creatividad, mejora la comunicación y refuerza el vínculo afectivo. #libroinfantil https://pbs.twimg.com/media/BkNrRPvCQAAuPfl.jpg
+b7> (x4) <bacultural> Conocé el cronograma de servicios para el feriado de hoy miércoles 2 de abril (incluye teatros y museos): http://bit.ly/Serv0204
+b8> (x59) <%bacultural> RT @herlombardi: El 2 de abril no debe ser feriado.Por ese camino terminaremos con un monumento a Galtieri. Los veteranos,los que murieron,merecen otra fecha
+b9> (x7) <bacultural> Inicia el ciclo "Teatro Otoñal": casi 30 grupos teatrales realizarán 50 funciones en 4 escenarios distintos. #GRATIS http://bit.ly/TeatOt
+c0> <delfeipls> necesito mas tiempo, mas feriados o un día mas los fines de semana
+c1> <bacultural> Homenaje a los caídos en Malvinas en el Museo Perlotti.  Del 5 de abril al 18 de mayo en Pujol 664. >> http://bit.ly/CMalvi
+c2> <bacultural> HOY viernes 4 y el sábado 5 Palo Pandolfo abre una nueva edición del ciclo Música en el Hall en el @TeatroSMOficial http://bit.ly/Mhall04
+c3> (x10) <bacultural> HOY abre el #BAFICI con función gratuita en el Anfiteatro de Pque Centenario. 20 h >> "The Congress". http://bit.ly/ApBAFICI
+c4> <BriProv> "Since I am paying for PS Plus I am asking for top quality games", haha. #entitlement
+c5> <FREAKOUTINPARIS> MALVINAS. ARGENTINAS. http://tmblr.co/ZFV2Fy1BvoDKc
+c6> <bacultural> El Ballet Contemporáneo del Teatro San Martín reestrenó "El Mesías" en el @TeatroSMOficial. Funciones y entradas: http://bit.ly/Mesias14
+c7> (x6) <%bacultural> RT @TeatroSMOficial: Mañana es Día Popular con #entradas a 35 para ver el ‘El mesías’ del #Ballet #Contemporáneo del TSM + en http://goo.gl/cxSpZv
+c8> (x64) <%BriProv> RT @Kotaku: Amazon adding Metacritic scores is bad news for everyone. Here's why: http://bit.ly/1funzcX
+c9> (x2) <bacultural> Jueves de película en el Distrito Audiovisual con "GMO OMG". #gratis 3/4, 19:30hs http://bit.ly/GmoOmg  http://ow.ly/i/54XxC
+[DM da0][bacultural/Thu Sep 22 23:55:55 +0000 2011] ¡Ganaste 2 plateas para Red Bull X-Fighter Jams! Buscalas mañana de 15 a 18 por Rivadavia 524 oficina 217, preguntá por Julieta o Gabriel.
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+d0> <BriProv> CBC news: FREE* house, details after the break. (* must pay for land and moving the entire building to a new location)
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+d1> <bacultural> En la Usina del Arte: Coreografía de un barrio. Encuentro abierto de dibujo por la artista Claudia del Rio.  http://bit.ly/WSEsRev #gratis
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+d2> <FREAKOUTINPARIS> Photo: Classy Blog en We Heart It. http://tmblr.co/ZFV2Fy1BweB7a
+TP_DATOS
+d3> <FREAKOUTINPARIS> Mi eeeeespalda, como dueeele! #viejazo. #ouch
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+d4> <FREAKOUTINPARIS> Photo: Andrew Lincoln & Norman Reedus | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1BwhkZA
+d5> <FREAKOUTINPARIS> Photo: Couple en We Heart It. http://tmblr.co/ZFV2Fy1Bwho-3
+d6> <FREAKOUTINPARIS> Photo: Elements of life en We Heart It. http://tmblr.co/ZFV2Fy1BwhtFs
+d7> <FREAKOUTINPARIS> Photo: . | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1BwhxaG
+TP_DATOS
+d8> <FREAKOUTINPARIS> Photo: Fuck Yeah 1980’s | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1Bwi09h
+TP_DATOS
+TP_DATOS
+TP_DATOS
+d9> <FREAKOUTINPARIS> Photo:  http://tmblr.co/ZFV2Fy1BwjPzQ
+e0> <FREAKOUTINPARIS> Photo:  http://tmblr.co/ZFV2Fy1Bwjg2S
+TP_DATOS
+e1> <FREAKOUTINPARIS> Photo:  http://tmblr.co/ZFV2Fy1Bwk77Q
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e2> <bacultural> Trina la Diuca  (música popular folclórica argentina) en el Bar Capisci. #gratis el 4 de abril, a las 19 hs. http://bit.ly/TrDiu
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e3> <bacultural> 5/4 -17h. Los santos inocentes de Mario Camus. Ciclo "Cineastas contados: Retratos de directores del cine español" http://bit.ly/CinesCont
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e4> <bacultural> Un Bafici deportivo necesita electrolitos. Hidratación. Gatorei, diría Bilardo.  "Vitamina C"  un tsunami de cosas maravillosas en #BAFICI
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e5> <BriProv> Peeled some ginger that was as crisp and juicy as an apple. AMAZING. This is going to be very good!
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e6> (x4) <%BriProv> RT @WinObs: Windows 7 outgains Windows 8 and 8.1 in market share again, but Windows XP still above 27% http://tnw.co/1pLgG8m
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e7> <bacultural> ¡La Ciudad recibe a Berlín! Hasta el 10/4 podés visitar exposiciones y presentaciones de Berlín en Buenos Aires: http://bit.ly/BerlínBA
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+e8> <BriProv> RETRO CITY RAMPAGE: DX - game update#1 available Thursday April 3rd on the Nintendo 3DS eShop. >> Trailer: http://youtu.be/6ESel5tyop0
+TP_DATOS
+e9> <BriProv> RETRO CITY RAMPAGE: DX will be available on the Nintendo 3DS eShop in Australia/NZ by tomorrow (if it isn't already).
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+f0> <%BriProv> RT @bigc_33: Road Not Taken looks better and better every update. Can't Wait!!\nhttp://blog.us.playstation.com/2014/04/02/road-not-taken-on-ps4-vita-living-a-full-15-year-life/\n#allofthegames
+TP_DATOS
+TP_DATOS
+TP_DATOS
+f1> <BriProv> It's the best era to be a developer thanks to digital distribution, but how awesome it would be to design arcade machine art for every game!
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+f2> <FREAKOUTINPARIS> Photo: Her white blank p▲ge. en We Heart It. http://tmblr.co/ZFV2Fy1ByNwrI
+f3> <FREAKOUTINPARIS> Photo: I.L.U.S.M. | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1ByN_s7
+f4> <FREAKOUTINPARIS> Photo: Visa Versa | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1ByO33N
+f5> <FREAKOUTINPARIS> Photo: Visa Versa | via Tumblr en We Heart It. http://tmblr.co/ZFV2Fy1ByO33N
+TP_DATOS
+f6> <FREAKOUTINPARIS> Photo: Untitled en We Heart It. http://tmblr.co/ZFV2Fy1ByO8QO
+f7> <FREAKOUTINPARIS> Photo: Pedro Neto - Fotos da linha do tempo | via Facebook en We Heart It. http://tmblr.co/ZFV2Fy1ByODe7
+f8> <FREAKOUTINPARIS> Photo: My Mad Fat Diary en We Heart It. http://tmblr.co/ZFV2Fy1ByOJdm
+f9> <FREAKOUTINPARIS> Photo: Naked s0uls | via Facebook en We Heart It. http://tmblr.co/ZFV2Fy1ByONid
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g0> <FREAKOUTINPARIS> https://pbs.twimg.com/media/BkQuUJaCIAAVBjE.jpg
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g1> <BriProv> I set my screen to go black on my laptop when I'm away, but then the PC fan gets loud/stays loud until I go back to using the PC. Any ideas?
+g2> <BriProv> I'm guessing maybe Windows is throttling my SSD for some kind of SxS or caching thing when I'm idle. Or is it something else?
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g3> <BriProv> When I'm away my monitor goes to power save (black screen). Immediately, the PC fan revs up and stays that way until I un-idle the PC.
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g4> <rolandbossio> Pues, papito Dios se cansó del léxico y chileno y ajá.
+TP_DATOS
+g5> <rolandbossio> Pues, papito Dios se cansó del léxico chileno y ajá
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g6> <delfeipls> que cancer las chetas
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+g7> <BriProv> Organic reach with Facebook pages steadily approaching "Pay to boost posts or your brand page is semi-useless"  http://www.forbes.com/sites/ewanspence/2014/03/06/the-approaching-demise-of-organic-reach-in-facebook/
+g8> <BriProv> I'd noticed the number of views on each Facebook page post dropping, now we have concrete proof. It's a shame.
+TP_DATOS
+TP_DATOS
+g9> <BriProv> I understand Facebook's providing hosting/backend deserve to be paid, but posts only going to a fraction of outright SUBSCRIBERS is poor.
+h0> <BriProv> On a Facebook page, you have X amount of people who LIKE your product and want news on it, but only a small % get that news unless you pay.
+TP_DATOS
+TP_DATOS
+h1> <BriProv> I would pay a monthly fee for the Facebook page "hosting", even to advertise to new users, but paying for existing likes to see posts sucks.
+TP_DATOS
+h2> <BriProv> And it's reasons like this that for proper coverage, you need to do Facebook pages, Twitter accounts, Newsletters, YouTube channels, etc.
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+h3> <BriProv> Nice! Trailer for Trailer Park Boys season 8!! Great to see everyone, but J-Roc was an extra awesome surprise. Glad he's back too!
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+h4> <%BriProv> RT @Jkooza: @Jfmaj0r Playing lots of Mercenary Kings on PS4, loving it!! Great job guys!!
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+h5> <%LucesparaAprend> RT @MonicaJimR: Con los líderes comunitarios @lucesparaaprend #lucesparaaprender #Honduras http://instagram.com/p/mS9Pt7ypB0/
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+h6> <LucesparaAprend> Sobre los resultados de PISA "TACTICAS: ¿Educar para el triunfo?. Modelos educativos tras ..." http://tacticasc.blogspot.com/2014/03/educar-para-el-triunfo.html?spref=tw
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS
+TP_DATOS

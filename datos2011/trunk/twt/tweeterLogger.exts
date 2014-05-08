@@ -1,0 +1,33 @@
+$store->{'master'} = "$ENV{'HOME'}/twt.bookmark";
+if(open(S, $store->{'master'})) {
+$last_id = scalar(<S>);
+close(S);
+}
+$extension_mode = $EM_SCRIPT_OFF;
+$handle = sub {
+my $ref = shift;
+return 0 if ($ref->{'user'}->{'protected'} eq 'true');
+my $sn = &descape($ref->{'user'}->{'screen_name'});
+my $string = &descape($ref->{'created_at'}) .
+" \@$sn " .
+&descape($ref->{'user'}->{'name'}) .
+" says: " .
+&descape($ref->{'text'}) . "\n";
+$sn =~ s#/#-#g;
+open(S, ">>", "${sn}.twt") || # combine strings for 5.005
+die("can't open ${sn}.twt for append: $!\n");
+binmode(S, ":utf8") unless ($seven);
+print S $string;
+close(S);
+&defaulthandle($ref);
+return 1;
+};
+$conclude = sub {
+print $stdout "TP_DATOS\n";
+if(open(S, ">".$store->{'master'})) {
+close(S);
+} else {
+print $stdout "LIB: failure to write: $!\n";
+}
+&defaultconclude;
+};
