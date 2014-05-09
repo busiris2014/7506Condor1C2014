@@ -166,7 +166,6 @@ bool FileParser::parseRSS(string path)
 
 ByteString FileParser::processDescription(ByteString input){
 	int index = 0;
-	int nextIndex = 0;
 	ByteString output;
 	string word;
 	size_t end;
@@ -264,7 +263,6 @@ void FileParser::processTWT(string path)
 
 	filepos = this->file->tellg();
 
-	}
 }
 
 
