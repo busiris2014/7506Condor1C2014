@@ -149,16 +149,13 @@ bool FileParser::parseRSS(string path)
 					end = true;
 			}
 
-			/* Del comienzo hasta la primer "-" es el AUTOR */
 			authorData = fileName.substr(0, fileName.length()-4);
 
 			book->setAuthor(Utility::trim(authorData));
 
+			this->processRSS(path);
 
-
-		this->processRSS(path);
-
-		delete(this->file);
+			delete(this->file);
 	}
 
 	return (validPath & end);
