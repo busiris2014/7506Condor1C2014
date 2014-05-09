@@ -320,38 +320,49 @@ string Utility::normalizeString(string str)
 
 string Utility::dateFormat(string date){
 	struct tm tm;
-	char buffer[26];
+	char buffer[7];
+	const char formatosalida[7] = "%Y%j";
 
-	//formato de salida: "01 Feb 2013 00:00:01 +0200"
+	//formato de salida:
+	//"2013360" (año y dia del año)
 
 	//formatos de entrada
-	//Pub.date: Thu, 08 May 2014 14:54:00 -0300
-	//Pub.date: Thu, 08 May 2014 10:52:00 PDT
-	//Pub.date: Tue, 06 May 2014 17:28:41 GMT
-	//Pub.date: 15 May 2013 16:37:27 +0200
-	//Pub.date: Thu,  8 May 2014 11:39:00 -0400
-	//Pub.date: Wed, 07 May 2014 18:03:25 +0000
-	//Pub.date: Thu, 8 May 2014 09:56:43 +0200
+	//rss
+	//Thu, 08 May 2014 14:54:00 -0300
+	//Thu,  8 May 2014 11:39:00 -0400
+	//Thu, 8 May 2014 09:56:43 +0200
+	//Thu, 08 May 2014 10:52:00 PDT
+	//Tue, 06 May 2014 17:28:41 GMT
+	//01 Sep 2012 00:00:01 +0200
+	//twitter
+	//Wed Apr 02 09:00:06 +0000 2014
 
-
-	if(date.length()==26)//rss de la-aventura
-		return date;
-		//strptime(date.c_str(), "%d %b %Y %T %z", &tm);//"01 Feb 2013 00:00:01 +0200"
-
-	else if(date.length()==19)//rss python
+	if(date.length()==31)
 		{
-		strptime(date.c_str(), "%Y/%m/%d %T", &tm); //"2014/05/06 17:55:13"
-		strftime (buffer,26,"%d %b %Y %T %z",&tm);
-		return buffer;// debo pasarlo a string?
+		if(date[5] == '0')
+			strptime(date.c_str(), "%a, %d %b %Y %T %z", &tm);
+		else
+			strptime(date.c_str(), "%a, %e %b %Y %T %z", &tm);
 		}
 
-	else if(date.length()==30)//twitter
-	{
-		strptime(date.c_str(), "%a %b %d %T %z %Y", &tm);//"Wed Apr 02 09:00:06 +0000 2014"
-	    strftime (buffer,26,"%d %b %Y %T %z",&tm);
-	    return buffer;// debo pasarlo a string?
-	}
-	return 0;
+	else if(date.length()==30)
+		{
+		if(date[3] == ',')
+			strptime(date.c_str(), "%a,%e %b %Y %T %z", &tm);
+		else
+			strptime(date.c_str(), "%a %b %d %T %z %Y", &tm);
+		}
+
+	else if(date.length()==29)
+		strptime(date.c_str(), "%a, %d %b %Y %T %Z", &tm);
+
+	else if(date.length()==26)
+		strptime(date.c_str(), "%d %b %Y %T %Z", &tm);
+
+	else return 0;
+
+	strftime (buffer,7,formatosalida,&tm);
+    return buffer;
 }
 
 
