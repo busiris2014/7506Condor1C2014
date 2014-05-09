@@ -170,20 +170,16 @@ ByteString FileParser::processDescription(ByteString input){
 
 	while (end == string::npos){
 		end = input.toString().find(' ',index);
-		nextIndex = input.toString().find(' ',index);
 		if(end == string::npos)
 			word = input.toString().substr(index,input.toString().length());
 		else
-			word = input.toString().substr(index,nextIndex);
-
+			word = input.toString().substr(index,end);
 
 		if(!(isStopword(word)))
     		output.insertLast(Utility::toLower(word));
 
 		index =  input.toString().find(' ',index)+1;
 	}
-
-
 
 	return input;
 }
