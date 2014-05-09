@@ -22,10 +22,11 @@ private:
 	set<string> words;
 	int lines;
 	Book* book;
-    list<Book> rss;
-    list<Book> twt;
 
 	map<string, Term*> terms;
+
+	streampos filepos;
+	string lastline;
 
 	void processTWT(string path);
 	void processRSS(string path);

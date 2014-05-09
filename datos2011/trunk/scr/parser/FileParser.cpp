@@ -7,6 +7,9 @@ FileParser::FileParser()
 	this->knownEditorials = getEditorials(controlPath + "editoriales.config");
 	this->stopwords = Utility::splitToSet(Resource::getConfigProperties()->get("booquerio.stopwords"), ";");
 	book = new Book();
+
+	filepos = 0;
+	lastline.clear();
 }
 
 FileParser::~FileParser() {
@@ -237,31 +240,30 @@ void FileParser::processTWT(string path)
 
 	string line;
 	bool endFile = false;
-	//bool editorialFound = false;
 
 	this->file = new ifstream(path.c_str());
 
-	while(!endFile)
-	{
-		getline(*this->file, line);
+	this->file->seekg(filepos);
 
-		if (this->file->eof() || this->file->bad())
-			endFile = true;
+	getline(*this->file, line);
 
-		if (!endFile)
+	if (this->file->eof() || this->file->bad())
+		endFile = true;
+
+	if (!endFile)
 		{
-			//comienza nuevo twt
+		editorialData = line.substr(0,(line.find('@', 0)-1));
+		editorialData = Utility::dateFormat(editorialData);
+		book->setEditorial(editorialData);
 
-			editorialData = line.substr(0,(line.find('@', 0)-1));
-			editorialData = Utility::dateFormat(editorialData);
-			book->setEditorial(editorialData);
-
-			textData = line.substr(line.find("says: ")+6,line.length());
-			text.clean();
-			text.insertLast(Utility::trim(textData));
-			book->setText(processDescription(text).toString());
+		textData = line.substr(line.find("says: ")+6,line.length());
+		text.clean();
+		text.insertLast(Utility::trim(textData));
+		book->setText(processDescription(text).toString());
 		}
-		//como hacemos para los siguientes? (loop)
+
+	filepos = this->file->tellg();
+
 	}
 }
 
@@ -277,15 +279,22 @@ void FileParser::processRSS(string path)
 
 	string line;
 	bool endFile = false;
-	bool newrss = true;
+	bool rssend = false;
 	bool addingDescription = false;
-
 
 	this->file = new ifstream(path.c_str());
 
-	while(!endFile)
+	this->file->seekg(filepos);
+
+	while(!endFile || !rssend)
 	{
-		getline(*this->file, line);
+		if(this->lastline.empty())
+			getline(*this->file, line);
+		else
+			{
+			line = this->lastline;
+			lastline.clear();
+			}
 
 		if (this->file->eof() || this->file->bad())
 			endFile = true;
@@ -294,15 +303,17 @@ void FileParser::processRSS(string path)
 		{
 			if(line.find("Title: ") != string::npos)
 				{
-				if(newrss)
+				if(!rssend)
 					{
 					titleData = line.substr(7,line.length());
 					book->setTitle(Utility::trim(titleData));
-					newrss = false;
 					}
 				else
 					{
 					book->setText(processDescription(text).toString());//termina el rss anterior
+					filepos = this->file->tellg();
+					this->lastline = line;
+					rssend = true;
 					}
 				}
 
