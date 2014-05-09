@@ -284,7 +284,9 @@ void FileParser::processRSS(string path)
 
 	string line;
 	bool endFile = false;
-	//bool editorialFound = false;
+	bool newrss = true;
+	bool addingDescription = false;
+
 
 	this->file = new ifstream(path.c_str());
 
@@ -297,44 +299,45 @@ void FileParser::processRSS(string path)
 
 		if (!endFile)
 		{
-			/*if(line.find("Title: ") != string::npos)
+			if(line.find("Title: ") != string::npos)
 				{
-				titleData = line.substr(7,line.length());
-				book->setTitle(Utility::trim(titleData));
+				if(newrss)
+					{
+					titleData = line.substr(7,line.length());
+					book->setTitle(Utility::trim(titleData));
+					newrss = false;
+					}
+				else
+					{
+					book->setText(processDescription(text).toString());//termina el rss anterior
+					}
 				}
 
 			else if(line.find("Author: ") != string::npos)
 				{
 				authorData = line.substr(8,line.length());
 				book->setAuthor(Utility::trim(authorData));
-				}*/
+				}
 
-			if(line.find("Description: ") != string::npos)
+			else if(line.find("Description: ") != string::npos)
 				{
 				text.clean();
 				textData = line.substr(13,line.length());
+				addingDescription = true;
 				}
 
-			else if(line.find("Updated: ") != string::npos)
+			else if(line.find("Pub.date: ") != string::npos)
 				{
-				book->setText(processDescription(text).toString());//nuevo rss
+				addingDescription = false;
 
-				//comienza otro rss
-
-				editorialData = line.substr(9,line.find("Tittle: ")-2);
+				editorialData = line.substr(10,line.length());
 				editorialData = Utility::dateFormat(Utility::trim(editorialData));
 				book->setEditorial(editorialData);
-
-				titleData = line.substr(7,line.length());
-				book->setTitle(Utility::trim(titleData));
-
-				authorData = line.substr(8,line.length());
-				book->setAuthor(Utility::trim(authorData));
 				}
-
 			else
 				{
-				text.insertLast(Utility::trim(line));
+				if(addingDescription)
+					text.insertLast(Utility::trim(line));
 				}
 		}
 		//como hacemos para los siguientes? (loop)
