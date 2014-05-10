@@ -320,8 +320,8 @@ string Utility::normalizeString(string str)
 
 string Utility::dateFormat(string date){
 	struct tm tm;
-	char buffer[7];
-	const char formatosalida[7] = "%Y%m%d";
+	char buffer[8];
+	const char formatosalida[8] = "%Y%m%d";
 
 	//formato de salida:
 	//"2013360" (año y dia del año)
@@ -361,7 +361,7 @@ string Utility::dateFormat(string date){
 
 	else return 0;
 
-	strftime (buffer,7,formatosalida,&tm);
+	strftime (buffer,8,formatosalida,&tm);
     return buffer;
 }
 
