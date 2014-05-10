@@ -106,49 +106,6 @@ ByteString FileParser::processDescription(ByteString input){
 	return input;
 }
 
-void FileParser::processFile(string path)
-{
-	ByteString text;
-
-	string line;
-	int index = 0;
-	bool endFile = false;
-	bool editorialFound = false;
-
-	this->file = new ifstream(path.c_str());
-
-	while(!endFile)
-	{
-		getline(*this->file, line);
-
-		if (this->file->eof() || this->file->bad())
-			endFile = true;
-
-		if (!endFile)
-		{
-			// Si es necesario, se intenta encontrar la editorial
-			if ((index < this->lines) && (!editorialFound))
-				editorialFound  = this->findEditorial(line);
-
-			// Se agrega la linea al texto
-			text.insertLast(line);
-
-			index += 1;
-		}
-	}
-
-	//delete(this->file);
-
-	// Se obtienen las palabras del texto
-	if (!Utility::empty(text.toString()))
-		this->setWords(text.toString());
-
-	// Se incorpora el texto al libro
-	book->setText(text.toString());
-
-	// Se setea el numero de palabras
-	book->setWordCount(this->getWordCount());
-}
 
 void FileParser::processTWT(string path)
 {
@@ -204,7 +161,7 @@ void FileParser::processRSS(string path)
 	ByteString text;
 	string authorData;
 	string titleData;
-	string editorialData;
+	string dateData;
 	string textData;
 
 	string line;
@@ -216,7 +173,7 @@ void FileParser::processRSS(string path)
 
 	this->file->seekg(filepos);
 
-	while(!endFile || !rssend)
+	while(!endFile && !rssend)
 	{
 		if(this->lastline.empty())
 			getline(*this->file, line);
@@ -236,7 +193,7 @@ void FileParser::processRSS(string path)
 				if(!rssend)
 					{
 					titleData = line.substr(7,line.length());
-					book->setTitle(Utility::trim(titleData));
+					book->setEditorial(Utility::trim(titleData));
 					}
 				else
 					{
@@ -264,9 +221,9 @@ void FileParser::processRSS(string path)
 				{
 				addingDescription = false;
 
-				editorialData = line.substr(10,line.length());
-				editorialData = Utility::dateFormat(Utility::trim(editorialData));
-				book->setEditorial(editorialData);
+				dateData = line.substr(10,line.length());
+				dateData = Utility::dateFormat(Utility::trim(dateData));
+				book->setWordCount(Utility::stringToInt(dateData));
 				}
 			else
 				{
@@ -274,7 +231,7 @@ void FileParser::processRSS(string path)
 					text.insertLast(Utility::trim(line));
 				}
 		}
-		//como hacemos para los siguientes? (loop)
+
 	}
 }
 
