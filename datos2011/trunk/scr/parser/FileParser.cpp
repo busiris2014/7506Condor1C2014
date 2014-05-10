@@ -22,11 +22,12 @@ FileParser::~FileParser() {
 		delete (*it).second;
 }
 
+
 bool FileParser::parse(string path)
 {
 	string fileName;
-	string titleData;
 	string authorData;
+	string type;
 
 	bool validPath = true;
 	bool end = false;
@@ -54,115 +55,34 @@ bool FileParser::parse(string path)
 				end = true;
 		}
 
-		/* Del comienzo hasta la primer "-" es el AUTOR */
-		authorData = fileName.substr(0, fileName.find('-', 0));
-
-		book->setAuthor(Utility::trim(authorData));
-
-		/* Del primer "-"  hasta ".txt" es el TITULO */
-		titleData = fileName.substr((fileName.find('-', 0)+1), fileName.length());
-		titleData = Utility::trim(titleData);
-		titleData = titleData.substr(0, (titleData.length()-4));
-		book->setTitle(Utility::trim(titleData));
-
-		/* Se procesa el archivo */
-		this->processFile(path);
-
-		delete(this->file);
-	}
-
-	return (validPath & end);
-}
-
-
-bool FileParser::parseTWT(string path)
-{
-	string fileName;
-	string authorData;
-
-	bool validPath = true;
-	bool end = false;
-	int index = -1;
-
-	// Se intenta abrir el archivo
-	this->file = new ifstream(path.c_str());
-
-	if (!*this->file)
-	{
-		delete(this->file);
-		validPath = false;
-	}
-
-	if (validPath)
-	{
-		/* Se obtiene solo el nombre del archivo que contiene autor - titulo  */
-		fileName = Utility::normalizeString(path);
-		while(!end)
-		{
-			index = fileName.find('/', 0);
-			if (index >= 0)
-				fileName = fileName.substr((fileName.find('/', 0)+1), fileName.length());
-			else
-				end = true;
-		}
-
-		/* Del comienzo hasta la primer "-" es el AUTOR */
+		/* Del comienzo hasta la primer "." es el AUTOR */
 		authorData = fileName.substr(0, fileName.length()-4);
 
+		type = fileName.substr(fileName.length()-3, fileName.length());
+		type = Utility::toLower(type);
+
 		book->setAuthor(Utility::trim(authorData));
 
-		/* Se procesa el archivo */
-		this->processTWT(path);
 
-		delete(this->file);
-	}
-
-	return (validPath & end);
-}
-
-
-bool FileParser::parseRSS(string path)
-{
-	string fileName;
-	string authorData;
-
-
-	bool validPath = true;
-	bool end = false;
-	int index = -1;
-
-	// Se intenta abrir el archivo
-	this->file = new ifstream(path.c_str());
-
-	if (!*this->file)
-	{
-		delete(this->file);
-		validPath = false;
-	}
-
-	if (validPath)
-	{
-			fileName = Utility::normalizeString(path);
-			while(!end)
-			{
-				index = fileName.find('/', 0);
-				if (index >= 0)
-					fileName = fileName.substr((fileName.find('/', 0)+1), fileName.length());
-				else
-					end = true;
-			}
-
-			authorData = fileName.substr(0, fileName.length()-4);
-
-			book->setAuthor(Utility::trim(authorData));
-
+		if(type.compare("twt")==0 ){
+			/* Se procesa el archivo */
+			this->processTWT(path);
+			book->setTitle("T");
+		} else if(type.compare("rss")==0 ){
 			this->processRSS(path);
-
+			book->setTitle("N");
+		} else {
 			delete(this->file);
+			validPath = false;
+		}
+
+		delete(this->file);
 	}
 
 	return (validPath & end);
 }
+
+
 
 ByteString FileParser::processDescription(ByteString input){
 	int index = 0;
@@ -234,7 +154,7 @@ void FileParser::processTWT(string path)
 {
 	ByteString text;
 	string titleData;
-	string editorialData;
+	string dateData;
 	string textData;
 
 	string line;
@@ -250,16 +170,28 @@ void FileParser::processTWT(string path)
 		endFile = true;
 
 	if (!endFile)
-		{
-		editorialData = line.substr(0,(line.find('@', 0)-1));
-		editorialData = Utility::dateFormat(editorialData);
-		book->setEditorial(editorialData);
+	{
+		dateData = line.substr(0,(line.find('@', 0)-1));
+		dateData = Utility::dateFormat(dateData);
+		book->setWordCount(Utility::stringToInt(dateData));
 
 		textData = line.substr(line.find("says: ")+6,line.length());
 		text.clean();
 		text.insertLast(Utility::trim(textData));
 		book->setText(processDescription(text).toString());
+
+		if (line.find('#', 0) != string::npos){
+			titleData = line.substr(line.find('#', 0)+1,line.length());
+			titleData = titleData.substr(0,titleData.find(' ', 0));
+			book->setEditorial(titleData);
+		}else{
+			book->setEditorial("n/a");
 		}
+
+	} else {
+		delete this->book;
+		this->book = NULL;
+	}
 
 	filepos = this->file->tellg();
 
@@ -490,7 +422,7 @@ void FileParser::setEditorials(string fileName)
 
 	remove(fileName.c_str());
 
-	FILE* result = fopen(fileName.c_str(),"w+");
+	//FILE* result = fopen(fileName.c_str(),"w+");
 
 	file.open(fileName.c_str(), ios::in | ios::out | ios::binary);
 	if(file.is_open())
