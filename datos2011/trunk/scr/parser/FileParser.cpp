@@ -90,7 +90,7 @@ ByteString FileParser::processDescription(ByteString input){
 	string word;
 	size_t end;
 
-	while (end == string::npos){
+	while (end == string::npos){//deberia ser !=
 		end = input.toString().find(' ',index);
 		if(end == string::npos)
 			word = input.toString().substr(index,input.toString().length());
@@ -103,7 +103,7 @@ ByteString FileParser::processDescription(ByteString input){
 		index =  input.toString().find(' ',index)+1;
 	}
 
-	return input;
+	return input;//deberia retornar output
 }
 
 
