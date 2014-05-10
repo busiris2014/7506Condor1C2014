@@ -188,10 +188,10 @@ void FileParser::processTWT(string path)
 			book->setEditorial("n/a");
 		}
 
-	} else {
-		delete this->book;
-		this->book = NULL;
-	}
+	} //else {
+	//	delete this->book;
+	//	this->book = NULL;
+	//}
 
 	filepos = this->file->tellg();
 
